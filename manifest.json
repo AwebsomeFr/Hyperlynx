@@ -7,8 +7,8 @@
     "description": "Quickly identify links that point to foreign domains.",
   
     "icons": {
-      "48": "./hyperlynx-logo.svg",
-      "96": "./hyperlynx-logo.svg"
+      "48": "./icons/hyperlynx-logo.svg",
+      "96": "./icons/hyperlynx-logo.svg"
     },
   
     "content_scripts": [
