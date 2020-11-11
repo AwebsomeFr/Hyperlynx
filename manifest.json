@@ -2,7 +2,7 @@
 
     "manifest_version": 2,
     "name": "Hyperlynx",
-    "version": "1.0.0",
+    "version": "1.1.0",
   
     "description": "Don't be surprised anymore: Hyperlynx quickly identifies links that point to foreign domains.",
   
