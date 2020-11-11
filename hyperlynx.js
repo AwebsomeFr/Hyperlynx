@@ -31,23 +31,25 @@
 			return true;
 			
 		};
-		
-	// Script
-		
-		// Get the reference domain.
-		
-			let visitedDomain = getDomain(window.location);
-		
-		// Analyze starting content.
-		
-			linkElms = document.getElementsByTagName('a');
-			
-			for(let linkElm of linkElms){
+
+	// Assign hyperlynx classes on the elements.
+
+		hyperlynxElements = (hyperlinkElms) => {
+
+			for(let hyperlinkElm of hyperlinkElms){
 				
-				if(!areTheDomainsTheSame(visitedDomain, getDomain(linkElm.href))) {
-					linkElm.classList.add('hyperlynx-warning');
+				if(!areTheDomainsTheSame(visitedDomain, getDomain(hyperlinkElm.href))) {
+					hyperlinkElm.classList.add('hyperlynx-warning');
 				}
-				linkElm.classList.add('hyperlynx-checked');
+
+				hyperlinkElm.classList.add('hyperlynx-checked');
 		
 			}
 
+		};
+		
+	// Script
+		
+		let visitedDomain = getDomain(window.location);
+		hyperlynxElements(document.getElementsByTagName('a'));
+			
